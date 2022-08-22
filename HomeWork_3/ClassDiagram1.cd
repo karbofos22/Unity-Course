@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HomeWork_3.Dwarf" Collapsed="true">
+    <Position X="1.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABAAAAQEAAAAAABAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Dwarf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeWork_3.Human" Collapsed="true">
+    <Position X="6.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABAAAAAAAAAAAABAAAAAAAAAAEAIAAAAAAAAgAAAA=</HashCode>
+      <FileName>Human.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeWork_3.NpcEnemy" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAADAAAAAQAAAAAABAAAAQAAAAAAAA=</HashCode>
+      <FileName>NpcEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeWork_3.Orc" Collapsed="true">
+    <Position X="4.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABAAAAAAAAAAAABAAAAIAAAAAAAAAAAAAAIAgAAAA=</HashCode>
+      <FileName>Orc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeWork_3.PlayableCharacter" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAEAgAAABDAAAAASAAABCAIAAACAAIACAAAA=</HashCode>
+      <FileName>PlayableCharacter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeWork_3.Wolf" Collapsed="true">
+    <Position X="13.75" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="HomeWork_3.Wolf.WolfLoot">
+        <TypeIdentifier>
+          <NewMemberFileName>Wolf.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAJAAAAAAAAAAEAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Wolf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeWork_3.Spider">
+    <Position X="9.25" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="HomeWork_3.Spider.SpiderLoot">
+        <TypeIdentifier>
+          <NewMemberFileName>Spider.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAJAAAAAAgAAAEAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Spider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeWork_3.Skeleton" Collapsed="true">
+    <Position X="11.5" Y="3" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="HomeWork_3.Skeleton.SkeletonLoot" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Skeleton.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQgAAAJAAAAAAAAACEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Skeleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
