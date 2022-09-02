@@ -12,7 +12,7 @@ namespace HomeWork_5
         public Spider()
         {
             Name = "Arachnid";
-            Hp = 55;
+            Hp = 30;
         }
 
     }

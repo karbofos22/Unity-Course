@@ -5,32 +5,38 @@ namespace HomeWork_5
 {
     internal class Program
     {
+
+
         static void Main(string[] args)
         {
-            Dictionary<string, string> characterList = CreateCharacterList();
+            Dictionary<string, PlayableCharacter> characterList = CreateCharacterList();
             ViewCharList(characterList);
 
             LinkedList<Enemy> enemyList = CreateEnemyList();
             Console.WriteLine();
 
             PoisonDamageToGroup(enemyList);
+            PoisonDamageResult(enemyList);
 
         }
-        static Dictionary<string, string> CreateCharacterList()
+        static Dictionary<string, PlayableCharacter> CreateCharacterList()
         {
-            Dictionary<string, string> dictionary = new Dictionary<string, string>();
-            dictionary.Add("Muzzeal Ironmaul", "Dwarfen Axe");
-            dictionary.Add("Gorbag", "Two-handed Headchopper");
-            dictionary.Add("Baralgin", "Soldier's Sword");
+            Dictionary<string, PlayableCharacter> dictionary = new Dictionary<string, PlayableCharacter>();
+            Dwarf dwarf = new();
+            Orc orc = new();
+            Human human = new();
+
+            dictionary.Add(dwarf.Name, dwarf);
+            dictionary.Add(orc.Name, orc);
+            dictionary.Add(human.Name, human);
 
             return dictionary;
         }
-        static void ViewCharList(Dictionary<string, string> list)
+        static void ViewCharList(Dictionary<string, PlayableCharacter> list)
         {
             foreach (var item in list)
             {
-                Console.WriteLine($"Hero name: {item.Key}\n" +
-                                  $"     weapon: {item.Value}");
+                Console.WriteLine($"Hero name: {item.Key}({item.Value.ToString().Substring(11)})");
             }
         }
 
@@ -47,12 +53,18 @@ namespace HomeWork_5
 
             return enemyList;
         }
-        static void ViewEnemyList(LinkedList<Enemy> enemyList)
+        static void PoisonDamageResult(LinkedList<Enemy> enemyList)
         {
             foreach (var item in enemyList)
             {
-                Console.WriteLine($"Enemy name: {item.Name}\n" +
-                                  $"        Hp: {item.Hp}");
+                if (item.Hp <= 0)
+                {
+                    Console.WriteLine($"{item.Name} was killed");
+                }
+                else if (item.Hp > 0)
+                {
+                    Console.WriteLine($"{item.Name} survived with {item.Hp} hp left");
+                }
             }
         }
         static void PoisonDamageToGroup(LinkedList<Enemy> enemyList)
@@ -68,7 +80,6 @@ namespace HomeWork_5
 
                     if (item.Hp == 0)
                     {
-                        Console.WriteLine($"{item.Name} is dead");
                         isNotDead = false;
                     }
                     else
